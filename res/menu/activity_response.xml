@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:id="@+id/patients"
+        android:onClick="GoToPatients" 
+        android:icon="@drawable/patients"
+        android:title="Patients"
+          android:showAsAction="ifRoom|withText"> 
+    </item> 
+    <item android:id="@+id/help"
+        android:onClick="GoToHelp" 
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Help"
+          android:showAsAction="ifRoom|withText"> 
+        
+    </item> 
+    <item android:id="@+id/doctors"
+        android:onClick="GoToDoctors" 
+        android:icon="@drawable/docicon" 
+        android:title="Doctors"
+          android:showAsAction="ifRoom|withText">
+        
+    </item> 
+    <item android:id="@+id/studies"
+        android:onClick="GoToStudies" 
+        android:icon="@drawable/studyicon"
+        android:title="Studies"
+          android:showAsAction="ifRoom|withText">
+        
+    </item>     
+</menu>

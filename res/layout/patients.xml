@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <ImageButton
+        android:id="@+id/ByNameClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:onClick="ByNameClicked"
+        android:src="@drawable/byname"
+        android:text="By Name" />
+
+    <ListView
+        android:id="@+id/patientListView"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ByNameClicked" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/ByDoctorClicked"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ByNameClicked"
+        android:onClick="ByDoctorClicked"
+        android:src="@drawable/bydoctor"
+        android:text="By Doctor" />
+
+    <ImageButton
+        android:id="@+id/ByStudyClicked"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ByDoctorClicked"
+        android:onClick="ByStudyClicked"
+        android:src="@drawable/bystudy"
+        android:text="By Study" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/patientListView"
+        android:layout_alignParentRight="true"
+        android:onClick="Search"
+        android:src="@drawable/search" />
+
+</RelativeLayout>

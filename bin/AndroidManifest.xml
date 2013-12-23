@@ -1,0 +1,170 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.websoftmagic.team"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/team114114"
+        android:label="@string/app_name"
+        
+      
+        
+        android:theme="@style/AppTheme"
+        android:name="com.websoftmagic.team.MyApp" > 
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+            <intent-filter> 
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>  
+        <activity android:name=".Patients"
+        	android:label="@string/title_activity_patients"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/> 
+    	</activity>
+        <activity android:name=".PatientEdit"
+        	android:label="@string/title_activity_patient_edit"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow">
+    	</activity>
+    	 <activity android:name=".PatientAdd"
+        	android:label="@string/title_activity_patient_add"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity> 
+    <activity android:name=".Scans"
+        	android:label="@string/title_activity_scans"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity> 
+    <activity android:name=".ScanAdd"
+        	android:label="@string/title_activity_scanadd"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".ScanEdit"
+        	android:label="@string/title_activity_scanedit"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".LesionEdit"
+        	android:label="@string/title_activity_lesionedit"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".LesionView"
+        	android:label="@string/title_activity_lesionview"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".LesionAdd"
+        	android:label="@string/title_activity_lesionadd"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".LesionChoose"
+        	android:label="@string/title_activity_lesionchoose"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".LesionCompare"
+        	android:label="@string/title_activity_lesioncompare"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".Studies"
+        	android:label="@string/title_activity_studies"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".StudyEdit"
+        	android:label="@string/title_activity_studyedit"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".StudyAdd"
+        	android:label="@string/title_activity_studyadd"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".Doctors"
+        	android:label="@string/title_activity_doctors"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".DoctorEdit"
+        	android:label="@string/title_activity_doctoredit"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+     <activity android:name=".DoctorAdd"
+        	android:label="@string/title_activity_doctoradd"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".DocumentView"
+        	android:label="@string/title_activity_documentview"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".ScanReportView"
+        	android:label="@string/title_activity_scanreportview"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".Response"
+        	android:label="@string/title_activity_response"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".DetailReport"
+        	android:label="@string/title_activity_detailreport"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".DetailGraph"
+        	android:label="@string/title_activity_detailgraph"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".StudyGraph"
+        	android:label="@string/title_activity_studygraph"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".StudyPie"
+        	android:label="@string/title_activity_studypie"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".Help"
+        	android:label="@string/title_activity_help"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+    <activity android:name=".ViewHtml"
+        	android:label="@string/title_activity_viewhtml"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow" >
+    </activity>
+
+    </application>
+    <supports-screens android:largeScreens="true"
+android:normalScreens="true" android:smallScreens="true"
+android:anyDensity="true" android:xlargeScreens="false" />
+</manifest>

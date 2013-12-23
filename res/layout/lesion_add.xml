@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <TextView
+        android:id="@+id/patientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="18dp"
+        android:text="Patient Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/scanDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patientName"
+        android:layout_alignBottom="@+id/patientName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="56dp"
+        android:text="mm/dd/yy"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/makeChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patientName"
+        android:layout_centerHorizontal="true"
+        android:text="Add New Lesion"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/green" />
+
+    <EditText
+        android:id="@+id/lesionDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/descriptionLabel"
+        android:layout_alignBottom="@+id/descriptionLabel"
+        android:layout_toRightOf="@+id/descriptionLabel"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lesionNumber"
+        android:layout_below="@+id/lesionNumber"
+        android:layout_marginTop="14dp"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/lesionSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lesionDescription"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/lesionDescription"
+        android:text="Size in MM"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/lesionSize"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lesionSizeLabel"
+        android:layout_alignBottom="@+id/lesionSizeLabel"
+        android:layout_alignLeft="@+id/lesionDescription"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/green" >
+
+        <requestFocus />
+    </EditText>
+
+    <ToggleButton
+        android:id="@+id/tb_lymph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tb_target"
+        android:layout_below="@+id/tb_target"
+        android:background="@color/white"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/targetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tb_target"
+        android:layout_alignBottom="@+id/tb_target"
+        android:layout_alignLeft="@+id/descriptionLabel"
+        android:text="Target Lesion"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/lymphLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tb_lymph"
+        android:layout_alignBottom="@+id/tb_lymph"
+        android:layout_alignLeft="@+id/imageLabel"
+        android:text="Lymph Node"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/imageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/targetLabel"
+        android:layout_below="@+id/tb_lymph"
+        android:layout_marginTop="16dp"
+        android:text="Image Online"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/filetypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageLabel"
+        android:layout_below="@+id/tb_imageOnline"
+        android:layout_marginTop="14dp"
+        android:text="File Type"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/fileType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/filetypeLabel"
+        android:layout_alignBottom="@+id/filetypeLabel"
+        android:layout_toRightOf="@+id/filetypeLabel"
+        android:ems="10"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/imageFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fileType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Image/File Name xxxxx-mmddyy-x.jpg"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/viewImage"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageFileName"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:onClick="ViewLesion"
+        android:text="View Image of Lesion" />
+
+    <ToggleButton
+        android:id="@+id/tb_imageOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tb_lymph"
+        android:layout_below="@+id/tb_lymph"
+        android:background="@color/white"
+        android:onClick="OnlineClicked"
+        android:text="ToggleButton" />
+
+    <ToggleButton
+        android:id="@+id/tb_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/viewImage"
+        android:layout_below="@+id/lesionSize"
+        android:background="@color/white"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/lesionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patientName"
+        android:layout_below="@+id/makeChanges"
+        android:layout_marginTop="14dp"
+        android:text="Lesion #"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/lesionNumberInput"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/makeChanges"
+        android:layout_toRightOf="@+id/lesionNumber"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/green" />
+
+</RelativeLayout>

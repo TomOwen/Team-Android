@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Team</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="search_label">Patient Search</string>
+    <string name="search_hint">Name, Dr., Study, ID</string>
+    <string name="title_activity_patients">Patients</string>
+    <string name="title_activity_patient_edit">Patient Data</string>
+    <string name="title_activity_login">TEAM</string>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <string name="title_activity_patient_add">New Patient</string>
+    <string name="title_activity_scans">Patient Scans</string>
+    <string name="title_activity_scanadd">New Scans</string>
+    <string name="title_activity_scanedit">Scan Details</string>
+    <string name="title_activity_lesionedit">Lesion Edit</string>
+    <string name="title_activity_lesionview">View Lesion</string>
+    <string name="title_activity_lesionadd">Lesion Add</string>
+    <string name="title_activity_lesionchoose">Choose Images</string>
+    <string name="title_activity_lesioncompare">Compare Images</string>
+    <string name="title_activity_studies">Studies</string>
+    <string name="title_activity_studyedit">Study Edit</string>
+    <string name="title_activity_studyadd">Study Add</string>
+    <string name="title_activity_doctors">Doctors</string>
+    <string name="title_activity_doctoredit">Doctor Edit</string>
+    <string name="title_activity_doctoradd">Doctor Add</string>
+    <string name="title_activity_documentview">Study</string>
+    <string name="title_activity_scanreportview">Scan Report</string>
+    <string name="title_activity_response">Response</string>
+    <string name="title_activity_detailreport">Response Report</string>
+    <string name="title_activity_detailgraph">Tumor Burden Graph</string>
+    <string name="title_activity_studygraph">All Patients</string>
+    <string name="title_activity_studypie">Study Response</string>
+    <string name="title_activity_help">TEAM Help</string>
+    <string name="title_activity_viewhtml">TEAM Help</string>
+    <string name="strSelectedDate">none</string>
+
+</resources>

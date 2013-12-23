@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/ByNameClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight=".25"
+            android:background="@null"
+            android:onClick="ByNameClicked"
+            android:src="@drawable/byname"
+            android:text="By Name" />
+
+        <ImageButton
+            android:id="@+id/ByDoctorClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight=".25"
+            android:background="@null"
+            android:onClick="ByDoctorClicked"
+            android:src="@drawable/bydoctor"
+            android:text="By Doctor" />
+
+        <ImageButton
+            android:id="@+id/ByStudyClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight=".25"
+            android:background="@null"
+            android:onClick="ByStudyClicked"
+            android:src="@drawable/bystudy"
+            android:text="By Study" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            
+            android:background="@null"
+            android:onClick="Search"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+    <ListView
+        android:id="@+id/patientListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingTop="20dp" >
+
+    </ListView>
+    </LinearLayout>
+
+</LinearLayout>
